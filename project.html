@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Project — FANGYUHAN</title>
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+
+  <nav id="navbar">
+    <div class="logo">FANGYUHAN</div>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!--
+    이 파일은 모든 프로젝트가 공유하는 껍데기입니다.
+    project.js 가 URL의 ?id= 값을 읽고
+    projects.json 에서 해당 데이터를 찾아 아래 슬롯들을 채웁니다.
+  -->
+  <main id="project-detail">
+
+    <!-- 뒤로가기 -->
+    <a href="index.html#projects" class="back-link">← 전체 프로젝트</a>
+
+    <!-- 슬롯: project.js 가 채워줍니다 -->
+    <h1 id="detail-title"></h1>
+    <p id="detail-role"></p>
+
+    <div id="detail-images"></div>
+
+    <!-- 영상 영역: 사진 아래, 텍스트 위 -->
+    <div id="detail-video"></div>
+
+    <p id="detail-description"></p>
+
+  <a href="index.html#projects" class="back-link">← 전체 프로젝트</a>
+
+  <h1 id="detail-title"></h1>
+  <p id="detail-role"></p>
+
+  <div id="detail-images"></div>
+
+  <!-- 새로 추가: 영상 영역 -->
+  <div id="detail-video"></div>
+
+  <p id="detail-description"></p>
+
+  </main>
+
+  <footer id="contact">
+    <h2>Let's explore a broader world together!</h2>
+    <p>여행을 사랑하는 분이라면 언제든지 저와 여행 이야기를 나누어 주세요.</p>
+     <a href="mailto:karroy.kyszd@gmail" class="contact-btn">이메일 보내기</a>
+    <p>© 2026. All rights reserved.</p>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+
+</html>
